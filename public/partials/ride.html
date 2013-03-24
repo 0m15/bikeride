@@ -1,0 +1,32 @@
+<div style="margin:0;background: url({{ background }}) fixed no-repeat;-webkit-background-size:cover;padding-top:30px;min-height:100%;height:auto;margin-top:-30px;background:#555" ng-init="watch()" class="ride-view">
+
+<div class="header-view">
+  <h1 class="view-title">New ride 
+    <a href="" id="ios-arrow-left" ng-click="navigate.back()">Back</a>
+    <a href="" id="ios-btn-right" ng-click="stop()"><i class="icon-remove"></i> stop</a>
+  </h2>
+  
+</div>
+
+<div class="screen-view">
+  <ul class="trip-stage">
+    
+    <li class="cf" ng-repeat="stage in trip">
+      <div class="stage-meta">
+        <span class="stage-time">
+          {{ stage.time.getTime() }}
+        </span>
+        <span class="stage-coords">
+          <i class="icon-map-marker"></i> {{ stage.lat }}, {{ stage.lng }}
+        </span>
+      </div>
+      <div class="stage-distance">
+        {{ getDistance(stage) }} km
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+</div>

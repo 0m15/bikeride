@@ -1,0 +1,40 @@
+<div ng-init="geolocate()" style="margin:0;background: url({{ background }}) fixed no-repeat;-webkit-background-size:cover;height:100%;" class="home-screen">
+
+<i spinner class="screen-spinner" ng-hide="temp">
+  <img src="img/bike-brake.svg" class="spinner-brake">
+  <p class="spinner-msg">getting your position</p>
+</i>
+
+<div class="screen-view" ng-show="temp">
+  
+  <div class="weather-view body-view">
+    <h2 class="town">
+      {{ town }} 
+      <span class="temp">
+        <span class="temp-label">{{ temp }}&deg; C</span>
+        <img ng-src="img/{{ icon }}.svg" class="weather-icon" alt="{{ weather }}">
+      </span>
+    </h2>
+    <!-- <ul class="weather-conditions">
+      <li>
+        <span class="weather-value">{{ wind_kph }} km/h</span>
+        <img ng-src="img/wind.svg" class="weather-icon weather-value-icon " alt="{{ weather }}" width="30" height="30">
+      </li>
+      <li>
+        <span class="weather-value">{{ humidity }}</span>
+        <i class="icon-tint weather-value-icon"></i>
+      </li>
+    </ul> -->
+  </div>
+  
+  <footer class="footer-view">
+    <button ng-click="navigate.go('/history')" class="btn btn-history">
+      <i class="icon-map-marker"></i> history
+    </button>
+    <button ng-click="navigate.go('/ride')" class="btn btn-ride">
+      <i class="icon-bolt"></i> start new ride
+    </button>
+  </footer>
+
+</div>
+</div>

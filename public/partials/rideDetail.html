@@ -1,0 +1,20 @@
+<div style="margin:0;min-height:100%;height:auto;background:#555" class="screen-panel">
+
+<div class="header-view">
+  <h1 class="view-title">Ride detail 
+    <a href="" id="ios-arrow-left" ng-click="navigate.back()">Back</a>
+    <a href="" id="ios-btn-right" ng-click="navigate.go('/history/' + ride.id + '/map')">map</a>
+  </h1>
+</div>
+
+<div class="screen-view">
+  <ul class="trip-stage">
+    <li>Ride time: {{ ride.getTotalTime(true) }}</li>
+    <li>Ride stages: {{ ride.data.length }}</li>
+    <li>Ride distance: {{ ride.getTotalDistance() }} km</li>
+    <li>Speed (km/h): {{ ride.getAverageSpeed() }} km/h</li>
+    <li>Speed (m/s): {{ ride.getAverageSpeed('ms') }} m/s</li>
+  <ul>
+</div>
+
+</div>

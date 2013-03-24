@@ -1,0 +1,28 @@
+<div class="screen-panel ride-view">
+
+<div class="header-view">
+  <h1 class="view-title">History 
+    <a href="" id="ios-arrow-left" ng-click="navigate.back()">Back</a>
+  </h2>
+</div>
+
+<div class="screen-view">
+  <ul class="trip-stage">
+    
+    <li class="cf" ng-repeat="ride in history" ng-click="navigate.go('/history/'+ride.id)">
+      <div class="stage-meta">
+        <span class="stage-time">{{ $index + 1 }}. {{ ride.getDate() }}</span>
+        <span class="stage-coords">
+        </span>
+      </div>
+      <div class="stage-distance">
+        {{ ride.getTotalTime(true) }}<br>
+        {{ ride.getTotalDistance() }} km
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+</div>

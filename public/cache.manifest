@@ -1,0 +1,10 @@
+CACHE MANIFEST
+/
+/js/*
+/img/*
+/css/*
+/partials/*
+
+NETWORK:
+http://maps.googleapis.com/maps/api/js?sensor=false
+http://fonts.googleapis.com/css?family=Lato:300,400,700,900
