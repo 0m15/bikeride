@@ -13,7 +13,15 @@ var WeatherService = function(rootScope, http, localStorageService) {
 }
 
 WeatherService.prototype = {
+
   getWeather: function(lat, lng) {
+
+    if(!navigator.onLine) {
+      rootScope.temp = "n.d."
+      rootScope.icon = "bike"
+      return
+    }
+
     var BASE_URL = 'http://api.wunderground.com/api/d4d5fb876ec15c06/geolookup/conditions/q/'
     var latlng = lat + ',' + lng
     var rootScope = this.rootScope

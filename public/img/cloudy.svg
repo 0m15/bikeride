@@ -32,7 +32,7 @@
 		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="81.198" y1="22.325" x2="85.976" y2="15.749"/>
 </g>
 <g id="Livello_4">
-	<path id="partly-cloudy-night_1_" display="none" fill="#FFFFFF" d="M81.258,45.403C78.023,39.2,71.664,35.29,64.545,35.29
+	<path id="partly-cloudy-night_1_" fill="#FFFFFF" d="M81.258,45.403C78.023,39.2,71.664,35.29,64.545,35.29
 		c-1.643,0-3.266,0.21-4.834,0.625c-4.344-5.652-10.991-8.962-18.219-8.962c-10.978,0-20.391,7.884-22.56,18.409
 		C12.211,46.341,7.03,52.144,7.03,59.131c0,7.672,6.244,13.916,13.916,13.916h58.104c7.674,0,13.922-6.244,13.922-13.916
 		C92.971,52.25,87.877,46.472,81.258,45.403z M79.049,66.797H20.945c-4.228,0-7.666-3.443-7.666-7.666s3.431-7.656,7.625-7.656
@@ -41,53 +41,32 @@
 		c4.182,0.05,7.582,3.481,7.582,7.653C86.721,63.354,83.277,66.797,79.049,66.797z M53.934,36.641 M92.096,54.301"/>
 </g>
 <g id="Livello_5" display="none">
-	<g id="partly-cloudy-night_2_" display="inline">
+	<path id="partly-cloudy-night_2_" display="inline" fill="#FFFFFF" d="M84.258,39.403C81.023,33.2,74.664,29.29,67.545,29.29
+		c-1.643,0-3.266,0.21-4.834,0.625c-4.344-5.652-10.99-8.962-18.219-8.962c-10.978,0-20.391,7.884-22.56,18.409
+		c-6.722,0.979-11.903,6.781-11.903,13.769c0,7.672,6.244,13.916,13.916,13.916h58.104c7.674,0,13.922-6.244,13.922-13.916
+		C95.971,46.25,90.877,40.472,84.258,39.403z M82.049,60.797H23.945c-4.228,0-7.666-3.443-7.666-7.666s3.431-7.656,7.625-7.656
+		h0.012l3.606,0.234l0.241-3.05c0.684-8.666,8.031-15.453,16.725-15.453c5.881,0,11.234,3.013,14.322,8.057l1.396,2.284l2.473-1.031
+		c1.537-0.647,3.184-0.972,4.865-0.972c5.201,0,9.803,3.125,11.725,7.966l0.775,1.946l2.094,0.025
+		c4.182,0.05,7.582,3.481,7.582,7.653C89.721,57.354,86.277,60.797,82.049,60.797z M56.934,30.641 M95.096,48.301"/>
+	<g display="inline">
 		
-			<image overflow="visible" opacity="0.45" width="99" height="59" xlink:href="F21CA9CF.png"  transform="matrix(1 0 0 1 3.5 11.5)">
-		</image>
-		<g>
-			<path fill="#FFFFFF" d="M84.258,35.403C81.023,29.2,74.664,25.29,67.545,25.29c-1.643,0-3.266,0.21-4.834,0.625
-				c-4.344-5.652-10.99-8.962-18.219-8.962c-10.978,0-20.391,7.884-22.56,18.409c-6.722,0.979-11.903,6.781-11.903,13.769
-				c0,7.672,6.244,13.916,13.916,13.916h58.104c7.674,0,13.922-6.244,13.922-13.916C95.971,42.25,90.877,36.472,84.258,35.403z
-				 M82.049,56.797H23.945c-4.228,0-7.666-3.443-7.666-7.666s3.431-7.656,7.625-7.656h0.012l3.606,0.234l0.241-3.05
-				c0.684-8.666,8.031-15.453,16.725-15.453c5.881,0,11.234,3.013,14.322,8.057l1.396,2.284l2.473-1.031
-				c1.537-0.647,3.184-0.972,4.865-0.972c5.201,0,9.803,3.125,11.725,7.966l0.775,1.946l2.094,0.025
-				c4.182,0.05,7.582,3.481,7.582,7.653C89.721,53.354,86.277,56.797,82.049,56.797z M56.934,26.641 M95.096,44.301"/>
-		</g>
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="74.5" x2="26.25" y2="81.75"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="44.905" y1="74.5" x2="41.155" y2="81.75"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="59.81" y1="74.5" x2="56.06" y2="81.75"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="74.714" y1="74.5" x2="70.964" y2="81.75"/>
 	</g>
 	<g display="inline">
 		
-			<image overflow="visible" opacity="0.45" width="66" height="24" xlink:href="F21CA9CA.png"  transform="matrix(1 0 0 1 17.5 63.5)">
-		</image>
-		<g>
-			<g>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="70.5" x2="26.25" y2="77.75"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="44.905" y1="70.5" x2="41.155" y2="77.75"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="59.81" y1="70.5" x2="56.06" y2="77.75"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="74.714" y1="70.5" x2="70.964" y2="77.75"/>
-			</g>
-		</g>
-	</g>
-	<g display="inline">
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="24.423" y1="89.155" x2="20.673" y2="96.405"/>
 		
-			<image overflow="visible" opacity="0.45" width="65" height="24" xlink:href="F21CA9C9.png"  transform="matrix(1 0 0 1 12.5 77.5)">
-		</image>
-		<g>
-			<g>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="24.423" y1="85.155" x2="20.673" y2="92.405"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="39.328" y1="85.155" x2="35.578" y2="92.405"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="54.232" y1="85.155" x2="50.482" y2="92.405"/>
-				
-					<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="69.137" y1="85.155" x2="65.387" y2="92.405"/>
-			</g>
-		</g>
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="39.328" y1="89.155" x2="35.578" y2="96.405"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="54.232" y1="89.155" x2="50.482" y2="96.405"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="69.137" y1="89.155" x2="65.387" y2="96.405"/>
 	</g>
 </g>
 <g id="Livello_6" display="none">

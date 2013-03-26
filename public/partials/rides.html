@@ -2,14 +2,14 @@
 
 <div class="header-view">
   <h1 class="view-title">History 
-    <a href="" id="ios-arrow-left" ng-click="navigate.back()">Back</a>
+    <a href="" id="ios-arrow-left" ng-tap="navigate.back()">Back</a>
   </h2>
 </div>
 
 <div class="screen-view">
   <ul class="trip-stage">
     
-    <li class="cf" ng-repeat="ride in history" ng-click="navigate.go('/history/'+ride.id)">
+    <li class="cf" ng-repeat="ride in history" ng-tap="navigate.go('/history/'+ride.id)">
       <div class="stage-meta">
         <span class="stage-time">{{ $index + 1 }}. {{ ride.getDate() }}</span>
         <span class="stage-coords">

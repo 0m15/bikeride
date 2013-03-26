@@ -2,31 +2,57 @@
 
 <div class="header-view">
   <h1 class="view-title">New ride 
-    <a href="" id="ios-arrow-left" ng-click="navigate.back()">Back</a>
-    <a href="" id="ios-btn-right" ng-click="stop()"><i class="icon-remove"></i> stop</a>
+    <a href="" id="ios-arrow-left" ng-tap="navigate.back()">Back</a>
+    <a href="" id="ios-btn-right" ng-tap="stop()"><i class="icon-remove"></i> stop</a>
   </h2>
   
 </div>
 
+<style>
+.ride-pulse {
+  width: 128px;
+  padding: 64px 0px;
+  border-radius: 128px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.pulser {
+  width: 64px;
+  padding: 32px 0;
+  /*border-radius: 64px;
+  background: #fff;
+  position: absolute;
+  top: 32px;
+  left: 32px;*/
+  background: url(/img/bike.svg) no-repeat;
+  -webkit-animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0.95);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(2.5);
+    opacity: 0;
+  }
+}
+</style>
+
 <div class="screen-view">
-  <ul class="trip-stage">
-    
-    <li class="cf" ng-repeat="stage in trip">
-      <div class="stage-meta">
-        <span class="stage-time">
-          {{ stage.time.getTime() }}
-        </span>
-        <span class="stage-coords">
-          <i class="icon-map-marker"></i> {{ stage.lat }}, {{ stage.lng }}
-        </span>
-      </div>
-      <div class="stage-distance">
-        {{ getDistance(stage) }} km
-      </div>
-    </li>
+  
+  <div class="ride-pulse">
+    <div class="pulser"></div>
+  </div>
 
-
-  </ul>
+  <div class="ride-time">
+    <span chrono></span>
+  </div> 
 </div>
 
 </div>

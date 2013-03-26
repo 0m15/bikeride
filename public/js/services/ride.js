@@ -26,6 +26,11 @@ bikerider.factory('rides', ['$rootScope', '$routeParams', 'localStorageService',
         }
         return history
       },
+
+      put: function(ride, data) {
+        data = JSON.stringify(data)
+        localStorageService.add(ride.id, data)
+      }
     }
   }
 ])
