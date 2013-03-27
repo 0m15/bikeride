@@ -1,14 +1,17 @@
-<div style="margin:0;background: url({{ background }}) fixed no-repeat;-webkit-background-size:cover;padding-top:30px;min-height:100%;height:auto;margin-top:-30px;background:#555" ng-init="watch()" class="ride-view">
-
+<div style="background: url({{ background }}) center center fixed no-repeat;-webkit-background-size:cover;" ng-init="watch()" class="screen-panel">
+<div class="overlay">
 <div class="header-view">
   <h1 class="view-title">New ride 
     <a href="" id="ios-arrow-left" ng-tap="navigate.back()">Back</a>
     <a href="" id="ios-btn-right" ng-tap="stop()"><i class="icon-remove"></i> stop</a>
   </h2>
-  
 </div>
 
 <style>
+.overlay {
+  background:rgba(0, 0, 0, .2);
+  height:100%;
+}
 .ride-pulse {
   width: 128px;
   padding: 64px 0px;
@@ -45,14 +48,10 @@
 </style>
 
 <div class="screen-view">
-  
-  <div class="ride-pulse">
-    <div class="pulser"></div>
-  </div>
 
   <div class="ride-time">
     <span chrono></span>
   </div> 
 </div>
-
+</div>
 </div>

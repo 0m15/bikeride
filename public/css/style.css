@@ -241,45 +241,29 @@
     text-align: center;
   }
 
-  .temp {
-    font-size: 20px;
-  }
-
-  .temp-label {
-    display: inline-block;
-    position: relative;
-    top: -5px;
-    width: 64px;
-    text-align: center;
-  }
-
   .weather-conditions {
     margin-top: 6px;
     text-align: center;
   }
 
   .weather-conditions li {
-    margin: 0;
+    margin: 0 auto;
     margin-left: 5px;
   }
 
-  .weather-temp {
+  li.weather-temp {
     display: block;
-    float: none;
+    width: 175px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .weather-humidity,
-  .weather-wind {
-  }
-
-  .weather-conditions li i {
-    font-size: 11px;
-    width: 8px;
-  }
-
-  .weather-conditions .icon-leaf,
-  .weather-conditions .icon-tint {
-    width: 24px;
+  .temp-label {
+    display: block;
+    text-align: center;
+    float: left;
+    margin-top: 18px;
+    font-size: 30px;
   }
 
   .weather-icon {
@@ -289,6 +273,18 @@
     -webkit-filter: drop-shadow( 0 1px 2px rgba(0, 0, 0, .45) );
     opacity: .9;
     margin: 0 auto;
+    float: right;
+  }
+
+
+  .weather-conditions li i {
+    font-size: 11px;
+    width: 8px;
+  }
+
+  .weather-conditions .icon-leaf,
+  .weather-conditions .icon-tint {
+    width: 24px;
   }
 
   .wind-icon {

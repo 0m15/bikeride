@@ -1,5 +1,5 @@
-<div ng-init="geolocate()" style="margin:0;background: url({{ background }}) fixed no-repeat;-webkit-background-size:cover;height:100%;" class="home-screen">
-<div style="background:rgba(0, 0, 0, .2);height:100%">
+<div ng-init="geolocate()" style="margin:0;background: url({{ background }}) center center no-repeat;-webkit-background-size:cover;height:100%;" class="home-screen">
+<div class="overlay">
 
 
 <i spinner class="screen-spinner" ng-hide="temp">
@@ -16,20 +16,20 @@
 
     <ul class="weather-conditions">
       <li class="weather-temp">
-        <span class="temp">
-          <img ng-src="img/{{ icon }}.svg" class="weather-icon" alt="{{ weather }}">
+        <div class="temp cf">
           <span class="temp-label">{{ temp }}&deg; C</span>
-        </span>
+          <img ng-src="img/{{ icon }}.svg" class="weather-icon" alt="{{ weather }}">
+        </div>
       </li>
       <li class="weather-humidity">
         <span>
-        <i class="icon-tint"></i>
-        <span class="weather-value">{{ humidity }}</span>
+          <i class="icon-tint"></i>
+          <span class="weather-value">{{ humidity }}</span>
         </span>
         <span>
-        <i class="icon-leaf"></i>
-        <span class="weather-value">{{ wind_kph }} km/h</span>
-      </span>
+          <i class="icon-leaf"></i>
+          <span class="weather-value">{{ wind_kph }} km/h</span>
+        </span>
       </li>
       <li class="weather-wind">
         

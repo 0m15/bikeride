@@ -12,11 +12,11 @@ http://fonts.googleapis.com/css?family=Lato:300,400,700,900
 /css/style.css
 
 #templates
-/partials/home.html
-/partials/ride.html
-/partials/rides.html
-/partials/rideDetail.html
-/partials/rideMap.html
+/js/partials/home.html
+/js/partials/ride.html
+/js/partials/rides.html
+/js/partials/rideDetail.html
+/js/partials/rideMap.html
 
 #javascript files
 /js/spin.min.js
