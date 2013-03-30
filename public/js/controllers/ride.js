@@ -41,6 +41,7 @@ var RideController = function($scope, $rootScope, rides, localStorageService, ge
     if(!$scope.$$phase) $scope.$apply()
     $scope.point = point
     $scope.distance = $scope.ride.getTotalDistance()
+    $scope.speed = $scope.ride.getAverageSpeed()
     if(!$scope.$$phase) $scope.$apply()
     rides.put($scope.ride, $scope.trip)
     console.log('added', $scope.ride, $scope.trip)
