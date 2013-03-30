@@ -5,10 +5,6 @@ var HomeController = function($scope, $http, $rootScope, geolocation, weatherSer
     $scope.locationSuccess(data)
   })
 
-  $scope.$on('$destroy', function() {
-    geolocation.clearWatch()
-  })
-
   // geolocation
   // ----------------------------
   $scope.geolocate = function() {

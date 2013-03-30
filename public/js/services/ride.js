@@ -52,7 +52,6 @@ Ride.prototype = {
     var s = time2.diff(time1, 'seconds') % 60
       
     if(!formatted) {
-      console.log(time2.diff(time1, 'seconds'))
       return time2.diff(time1, 'seconds')
     }
 
