@@ -1,57 +1,19 @@
 <div style="background: url({{ background }}) center center fixed no-repeat;-webkit-background-size:cover;" ng-init="watch()" class="screen-panel">
 <div class="overlay">
-<div class="header-view">
-  <h1 class="view-title">New ride 
-    <a href="" id="ios-arrow-left" ng-tap="navigate.back()">Back</a>
-    <a href="" id="ios-btn-right" ng-tap="stop()"><i class="icon-remove"></i> stop</a>
-  </h2>
-</div>
+  
+  <div class="header-view">
+    <h1 class="view-title">New ride 
+      <a href="" id="ios-arrow-left" ng-tap="navigate.back()">Back</a>
+      <a href="" id="ios-btn-right" ng-tap="stop()"><i class="icon-remove"></i> stop</a>
+    </h1>
+  </div>
 
-<style>
-.overlay {
-  background:rgba(0, 0, 0, .2);
-  height:100%;
-}
-.ride-pulse {
-  width: 128px;
-  padding: 64px 0px;
-  border-radius: 128px;
-  margin: 0 auto;
-  margin-top: 20px;
-  border: 1px solid #fff;
-  position: relative;
-}
-
-.pulser {
-  width: 64px;
-  padding: 32px 0;
-  /*border-radius: 64px;
-  background: #fff;
-  position: absolute;
-  top: 32px;
-  left: 32px;*/
-  background: url(/img/bike.svg) no-repeat;
-  -webkit-animation: pulse 1s infinite;
-}
-
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale(0.95);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: scale(2.5);
-    opacity: 0;
-  }
-}
-</style>
-
-<div class="screen-view">
-
-  <div class="ride-time">
-    <span chrono></span>
-  </div> 
-</div>
+  <div class="screen-view ride-view">
+    <div class="view-row centered">
+      <h2 class="chrono" chrono></h2>
+      <h3 class="ride-position"><small>avg. speed</small> {{ point.speed||"0.00" }} km/h</h3>
+      <h3 class="ride-position"><small>distance</small> {{ ride.getTotalDistanceKm()||"0.00" }} km</h3>
+    </div> 
+  </div>
 </div>
 </div>

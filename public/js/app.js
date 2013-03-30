@@ -52,10 +52,36 @@ var bikerider = angular.module('bikerider', ['ui', 'mobile-navigate', 'LocalStor
   })
   .directive('chrono', function() {
     var start = new Date().getTime()
+    var now = null
+    var diff = {
+      hours: function(t2,t1) {
+        return pad(Math.floor(((t2-t1) / (1000 * 3600)) % 24))
+      },
+      minutes: function(t2,t1) {
+        return pad(Math.floor(((t2-t1) / (1000 * 60)) % 60))
+      },
+      seconds: function(t2,t1) {
+        return pad(Math.floor(((t2-t1) / 1000) % 60))
+      },
+      tenths: function(t2,t1) {
+        return pad(Math.floor(((t2-t1) / 100) % 10))
+      }
+    }
+    var pad = function(num, size) {
+      size || (size = 2)
+      var s = num+""
+      if(num < 10) s = "0" + num
+      return s
+    }
     return function(scope, el, attrs) {
       this.interval = setInterval(function() {
-        
-      }, 1000)
+        now = new Date().getTime()
+        var hh = diff.hours(now,start),
+            mm = diff.minutes(now,start),
+            ss = diff.seconds(now,start),
+            tt = diff.tenths(now,start)
+        el.text(hh + ':' + mm + ':' + ss + ':' + tt)
+      }, 100)
     }
   })
 

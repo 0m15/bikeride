@@ -3,9 +3,11 @@ var RideController = function($scope, $rootScope, rides, localStorageService, ge
   $scope.ride = new Ride()
   $scope.ride.id = 'ride:'+ new Date().getTime()
   $scope.watching = false
-  $scope._point = {}
+  $scope.point = {}
   $scope.trip = []
   
+  if(!$rootScope.background) $rootScope.background = 'http://www.marcobreier.com/wp/wp-content/uploads/2011/06/urban_ny_street_1.jpg'
+
   var _rides = JSON.parse(localStorageService.get('r_'))||[]
   _rides.push($scope.ride.id)
   localStorageService.add('r_', JSON.stringify(_rides))
@@ -35,13 +37,13 @@ var RideController = function($scope, $rootScope, rides, localStorageService, ge
       speed: coords.speed,
     }
 
-    //if($scope._point && $scope._point.lat.toFixed(7) == point.lat.toFixed(7) && $scope._point.lng.toFixed(7) == point.lng ) return
-
     $scope.trip.push(point)
     if(!$scope.$$phase) $scope.$apply()
-    $scope._point = point
+    $scope.point = point
+    $scope.distance = $scope.ride.getTotalDistance()
+    if(!$scope.$$phase) $scope.$apply()
     rides.put($scope.ride, $scope.trip)
-    //localStorageService.add($scope.rideId, JSON.stringify($scope.trip))
+    console.log('added', $scope.ride, $scope.trip)
   }
 
   $scope.getTime = function(time) {
