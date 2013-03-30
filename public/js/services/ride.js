@@ -41,6 +41,9 @@ function Ride(data) {
 }
 
 Ride.prototype = {
+  setData: function(data) {
+    this.data = data
+  },
   
   getTotalTime: function(formatted) {
     if(!this.data || this.data.length == 1) return '00:00:00'

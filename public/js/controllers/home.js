@@ -40,8 +40,10 @@ var HomeController = function($scope, $http, $rootScope, geolocation, weatherSer
         $rootScope.background = "img/bike.svg"
         return
       }
-      var idx = 0 //Math.floor(Math.random() * data.photos.length)
+      console.log(data)
+      var idx = Math.floor(Math.random() * data.photos.length)
       $rootScope.background = data.photos[idx].photo_file_url
+      $rootScope.locationDescription = data.photos[idx].photo_title
     })
   }
 
