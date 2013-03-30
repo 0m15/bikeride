@@ -11,8 +11,9 @@
   <div class="screen-view ride-view">
     <div class="view-row centered">
       <h2 class="chrono" chrono></h2>
+      <p><img src="img/bike-white.svg" width="128" height="128"></p>
       <h3 class="ride-position"><small>avg. speed</small> {{ point.speed||"0.00" }} km/h</h3>
-      <h3 class="ride-position"><small>distance</small> {{ ride.getTotalDistanceKm()||"0.00" }} km</h3>
+      <h3 class="ride-position"><small>distance</small> {{ distance||"0.00" }} km</h3>
     </div> 
   </div>
 </div>
