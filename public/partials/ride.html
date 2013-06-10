@@ -16,5 +16,15 @@
       <h3 class="ride-position"><small>distance</small> {{ distance||"0.00" }} km</h3>
     </div> 
   </div>
+
+  <footer class="footer-view">
+    <button ng-tap="stop()" class="btn btn-history">
+      <i class="icon-flag"></i> stop
+    </button>
+    <p style="font-size:13px">
+      <strong>Near to you:</strong> <em>&quot;{{ locationDescription }}&quot;</em>
+    </p>
+  </footer>
+
 </div>
 </div>
